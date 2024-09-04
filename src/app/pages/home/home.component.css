@@ -1,0 +1,78 @@
+/* Estilo general para el contenedor del diseño */
+.container {
+    max-width: 4xl;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 1.5rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+h1 {
+    font-size: 2.25rem; /* Tamaño de texto grande */
+    font-weight: bold; /* Negrita para el encabezado */
+    color: #002d72; /* Color azul oscuro */
+    margin-bottom: 1.5rem; /* Espacio debajo del encabezado */
+    text-align: center; /* Centra el texto */
+}
+
+p {
+    font-size: 1.125rem; /* Tamaño de texto grande */
+    color: #004e92; /* Color azul medio */
+    margin-bottom: 2rem; /* Espacio debajo del párrafo */
+    text-align: center; /* Centra el texto */
+}
+
+.flex {
+    display: flex; /* Utiliza Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos envuelvan en varias líneas */
+    gap: 1.5rem; /* Espacio entre las tarjetas */
+    margin-bottom: 2rem; /* Espacio debajo de las tarjetas */
+}
+
+.card {
+    background-color: #e3f2fd; /* Fondo azul claro para las tarjetas */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mediana para profundidad */
+    padding: 1rem; /* Espaciado interno */
+    flex: 1; /* Permite que las tarjetas ocupen espacio disponible */
+    max-width: calc(33.333% - 1.5rem); /* Ancho máximo para tres tarjetas por fila */
+}
+
+.card h2 {
+    font-size: 1.25rem; /* Tamaño de texto grande para el encabezado de la tarjeta */
+    font-weight: semibold; /* Negrita para el encabezado de la tarjeta */
+    color: #002d72; /* Color azul oscuro */
+    margin-bottom: 0.5rem; /* Espacio debajo del encabezado de la tarjeta */
+}
+
+.card p {
+    font-size: 1rem; /* Tamaño de texto normal */
+    color: #0056b3; /* Color azul más oscuro */
+    margin-bottom: 1rem; /* Espacio debajo del párrafo de la tarjeta */
+}
+
+.card a {
+    color: #007bff; /* Color azul para enlaces */
+    text-decoration: none; /* Elimina subrayado de enlaces */
+}
+
+.card a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+.button {
+    display: inline-block; /* Alineación en línea */
+    background-color: #007bff; /* Fondo azul para el botón */
+    color: #ffffff; /* Texto blanco para el botón */
+    font-weight: bold; /* Negrita para el texto del botón */
+    padding: 0.5rem 1.5rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    text-align: center; /* Centra el texto del botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color azul más oscuro en hover */
+}

@@ -1,0 +1,32 @@
+/* Estilos para el componente Juegos Favoritos */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800; /* font-extrabold */
+    color: #16a34a; /* text-green-600 */
+    margin-bottom: 1.5rem;
+  }
+  
+  ul {
+    color: #4b5563; /* text-gray-700 */
+    margin-bottom: 1.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  p {
+    font-size: 1.125rem; /* text-lg */
+    color: #374151; /* text-gray-800 */
+    margin-bottom: 1rem;
+  }
+  

@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg sky-blue-background">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/" style="color: aliceblue; font-weight: 800;">
+            Mi vida
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/" routerLinkActive="active" style="color: aliceblue; font-weight: 800;">
+                        Mi espacio
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       style="color: aliceblue; font-weight: 800;">
+                        Link
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/viajes">Viajes</a></li>
+                        <li><a class="dropdown-item" routerLink="/juegos">Juegos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" routerLink="/pasiones">Pasiones</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login" style="color: aliceblue; font-weight: 800;">
+                        Login
+                    </a>
+                </li>
+                </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="d-flex">
+            <button *ngIf="!isLogged()" 
+                    class="btn btn-outline-success" 
+                    type="button"
+                    routerLink="/login">Login</button>
+            <button *ngIf="isLogged()" 
+                    class="btn btn-outline-danger" 
+                    type="button" 
+                    (click)="onClickLogout()">Cerrar Sesión</button>
+        </div>
+    </div>
+</nav>

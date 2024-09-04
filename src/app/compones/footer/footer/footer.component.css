@@ -1,0 +1,46 @@
+/* Estilo para el footer con fondo azul */
+.sky-blue-footer {
+    background-color: #007BFF; /* Color azul */
+    color: #ffffff; /* Color del texto en blanco para contraste */
+    padding: 20px 0; /* Espaciado vertical para el footer */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo para los encabezados y párrafos dentro del footer */
+.sky-blue-footer h5 {
+    font-size: 1.2em; /* Tamaño de fuente del encabezado */
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+    color: #ffffff; /* Color del texto blanco */
+}
+
+.sky-blue-footer p {
+    font-size: 0.9em; /* Tamaño de fuente del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+}
+
+/* Estilo para las imágenes de redes sociales */
+.sky-blue-footer .d-flex img {
+    width: 40px; /* Ancho de las imágenes */
+    height: 40px; /* Altura de las imágenes */
+    margin: 0 10px; /* Espaciado horizontal entre imágenes */
+    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+/* Efecto hover para las imágenes de redes sociales */
+.sky-blue-footer .d-flex img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilo para la línea horizontal */
+.sky-blue-footer hr {
+    border: 1px solid #ffffff; /* Color y grosor de la línea */
+    width: 80%; /* Ancho de la línea */
+    margin: 20px auto; /* Espaciado vertical y centrado */
+}
+
+/* Estilo para el texto de derechos reservados */
+.sky-blue-footer .text-center {
+    font-size: 0.8em; /* Tamaño de fuente del texto de derechos */
+    margin-top: 10px; /* Espaciado superior */
+}

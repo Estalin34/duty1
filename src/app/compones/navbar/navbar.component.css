@@ -1,0 +1,29 @@
+/* Clase para un fondo azul cielo compartido */
+.sky-blue-background {
+    background-color: #007BFF; /* Color azul similar al footer */
+    color: #ffffff; /* Color de texto blanco para contraste */
+}
+
+.navbar-brand,
+.nav-link,
+.nav-link.disabled {
+    color: aliceblue; /* Color de los enlaces de navegación */
+    font-weight: 800; /* Negrita para los enlaces */
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #f0f0f0; /* Color de texto más claro en hover */
+}
+
+/* Estilo para los botones de búsqueda y de inicio de sesión */
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffffff;
+    color: #007BFF;
+    border-color: #ffffff;
+}

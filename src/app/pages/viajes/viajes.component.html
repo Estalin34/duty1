@@ -1,0 +1,20 @@
+<div class="container mx-auto mt-8 p-6 bg-gray-100 rounded-lg shadow-md">
+    <h1 class="text-3xl font-extrabold text-center mb-6 text-blue-600">Nuestros Destinos de Viaje</h1>
+    <p class="text-center text-gray-600 mb-8">Explora algunos de los destinos más exóticos y emocionantes que ofrecemos.
+        Desde playas paradisíacas hasta montañas majestuosas, cada lugar promete una experiencia única e inolvidable.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card bg-white rounded-lg overflow-hidden shadow-lg transition transform hover:scale-105 duration-300"
+            *ngFor="let destino of destinos">
+            <img [src]="destino.imagen" class="card-img-top w-full h-48 object-cover" alt="{{ destino.nombre }}">
+
+            <div class="card-body p-4">
+                <h5 class="card-title text-xl font-bold mb-2 text-gray-800">{{ destino.nombre }}</h5>
+                <p class="card-text text-gray-700 mb-4">{{ destino.descripcion }}</p>
+                <a [routerLink]="['/viaje', destino.id]"
+                    class="btn btn-primary text-white bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded-full">Ver
+                    Detalles</a>
+            </div>
+        </div>
+    </div>
+</div>
